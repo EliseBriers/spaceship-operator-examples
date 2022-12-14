@@ -1,0 +1,24 @@
+Checks: >
+  -*,
+  misc-*,
+  modernize-*,
+  performance-*,
+  portability-*,
+  readability-*,
+  fuchsia-trailing-return,
+  -readability-magic-numbers,
+  -modernize-use-nodiscard,
+  -modernize-use-trailing-return-type,
+
+CheckOptions:
+  - { key: readability-identifier-naming.NamespaceCase,          value: lower_case }
+  - { key: readability-identifier-naming.ClassCase,              value: CamelCase  }
+  - { key: readability-identifier-naming.StructCase,             value: CamelCase  }
+  - { key: readability-identifier-naming.FunctionCase,           value: CamelCase  }
+  - { key: readability-identifier-naming.VariableCase,           value: camelBack  }
+  - { key: readability-identifier-naming.PrivateMemberCase,      value: CamelCase  }
+  - { key: readability-identifier-naming.PrivateMemberPrefix,    value: m          }
+  - { key: readability-identifier-naming.EnumCase,               value: CamelCase  }
+  - { key: readability-identifier-naming.EnumConstantCase,       value: CamelCase  }
+  - { key: readability-identifier-naming.EnumConstantPrefix,     value: k          }
+  - { key: readability-function-cognitive-complexity.Threshold,  value: 38         }

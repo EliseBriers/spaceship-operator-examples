@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/home/elise/Workspace/cpp/spaceship-operator-examples/build",
+  "command": "/usr/bin/c++  -I/home/elise/Workspace/cpp/spaceship-operator-examples/include -std=gnu++20 -o CMakeFiles/spaceship-operator-examples.dir/src/Tests.cpp.o -c /home/elise/Workspace/cpp/spaceship-operator-examples/src/Tests.cpp",
+  "file": "/home/elise/Workspace/cpp/spaceship-operator-examples/src/Tests.cpp"
+},
+{
+  "directory": "/home/elise/Workspace/cpp/spaceship-operator-examples/build",
+  "command": "/usr/bin/c++  -I/home/elise/Workspace/cpp/spaceship-operator-examples/include -std=gnu++20 -o CMakeFiles/spaceship-operator-examples.dir/src/catch2/catch_amalgamated.cpp.o -c /home/elise/Workspace/cpp/spaceship-operator-examples/src/catch2/catch_amalgamated.cpp",
+  "file": "/home/elise/Workspace/cpp/spaceship-operator-examples/src/catch2/catch_amalgamated.cpp"
+},
+{
+  "directory": "/home/elise/Workspace/cpp/spaceship-operator-examples/build",
+  "command": "/usr/bin/c++  -I/home/elise/Workspace/cpp/spaceship-operator-examples/include -std=gnu++20 -o CMakeFiles/spaceship-operator-examples.dir/src/SimpleStruct.cpp.o -c /home/elise/Workspace/cpp/spaceship-operator-examples/src/SimpleStruct.cpp",
+  "file": "/home/elise/Workspace/cpp/spaceship-operator-examples/src/SimpleStruct.cpp"
+}
+]

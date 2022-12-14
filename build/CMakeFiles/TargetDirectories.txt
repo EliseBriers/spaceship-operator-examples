@@ -1,0 +1,4 @@
+/home/elise/Workspace/cpp/spaceship-operator-examples/build/CMakeFiles/spaceship-operator-examples.dir
+/home/elise/Workspace/cpp/spaceship-operator-examples/build/CMakeFiles/test-spaceship-operator-examples.dir
+/home/elise/Workspace/cpp/spaceship-operator-examples/build/CMakeFiles/edit_cache.dir
+/home/elise/Workspace/cpp/spaceship-operator-examples/build/CMakeFiles/rebuild_cache.dir
