@@ -1,1 +1,0 @@
-/usr/bin/c++ "CMakeFiles/spaceship-operator-examples.dir/src/Tests.cpp.o" "CMakeFiles/spaceship-operator-examples.dir/src/catch2/catch_amalgamated.cpp.o" "CMakeFiles/spaceship-operator-examples.dir/src/SimpleStruct.cpp.o" -o spaceship-operator-examples 
