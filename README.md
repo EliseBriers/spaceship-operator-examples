@@ -4,7 +4,7 @@
     <a href="https://github.com/EliseBriers/Software-Raytracer/actions/workflows/msbuild.yml](https://github.com/EliseBriers/spaceship-operator-examples/actions/workflows/cmake.yml">
         <img src="https://github.com/EliseBriers/spaceship-operator-examples/actions/workflows/cmake.yml/badge.svg">
     </a>
-    <a href="LISENCE">
+    <a href="LICENSE">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
     </a>
 </p>
