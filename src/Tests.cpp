@@ -274,6 +274,13 @@ TEST_CASE("Spaceship operator on float can handle special cases such as NaN.", "
     REQUIRE(compareAC == std::partial_ordering::unordered);
 }
 
+TEST_CASE("NaN returns false when compared to itself.", "[std::weak_ordering]")
+{
+    const float example { NAN };
+
+    REQUIRE(example != example);
+}
+
 // ╔══════════╗
 // ║ Fraction ║
 // ╚══════════╝
