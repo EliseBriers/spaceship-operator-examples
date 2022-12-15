@@ -11,7 +11,8 @@ cmake_minimum_required(VERSION 3.5)
 project(${root_folder})
 
 # Create a sources variable with a link to all cpp files to compile
-set(SOURCES src/Tests.cpp src/catch2/catch_amalgamated.cpp src/SimpleStruct.cpp)
+set(SOURCES src/Tests.cpp src/catch2/catch_amalgamated.cpp src/SimpleStruct.cpp
+            src/Fraction.cpp)
 
 # Add an executable
 add_executable(${PROJECT_NAME} ${SOURCES})

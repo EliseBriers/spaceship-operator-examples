@@ -25,4 +25,13 @@ struct SimpleStruct {
 std::strong_ordering operator<=>(const SimpleStruct& lhs, const SimpleStruct& rhs);
 bool operator==(const SimpleStruct& lhs, const SimpleStruct& rhs);
 }
+
+namespace simple_struct_default {
+struct SimpleStruct {
+    int value;
+
+    friend std::strong_ordering operator<=>(const SimpleStruct& lhs, const SimpleStruct& rhs) = default;
+};
+
+}
 #endif
