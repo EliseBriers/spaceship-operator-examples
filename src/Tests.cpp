@@ -213,12 +213,10 @@ TEST_CASE("Spaceship operator on int results in strong ordering.", "[std::strong
     const std::strong_ordering compareAC { numA <=> numC };
     const std::strong_ordering compareCA { numC <=> numA };
 
-    REQUIRE(std::is_eq(compareAB)); // ==
-    REQUIRE(std::is_neq(compareAC)); // !=
-
-    REQUIRE(std::is_lt(compareAC)); // <
-    REQUIRE(std::is_gt(compareCA)); // >
-
+    REQUIRE(std::is_eq(compareAB)); //   ==
+    REQUIRE(std::is_neq(compareAC)); //  !=
+    REQUIRE(std::is_lt(compareAC)); //   <
+    REQUIRE(std::is_gt(compareCA)); //   >
     REQUIRE(std::is_lteq(compareAC)); // <=
     REQUIRE(std::is_gteq(compareCA)); // >=
 }
