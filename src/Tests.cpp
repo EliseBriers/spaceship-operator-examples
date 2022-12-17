@@ -304,18 +304,8 @@ namespace test_fraction {
 
     bool CheckCompare(const Fraction& lhs, const Fraction& rhs)
     {
-        if (lhs.denominator == 0U && rhs.denominator == 0U) {
-            return lhs == rhs;
-        }
-        if (lhs.denominator == 0U) {
-            return lhs > rhs;
-        }
-        if (rhs.denominator == 0U) {
-            return lhs < rhs;
-        }
-
-        float resultLhs { static_cast<float>(lhs.numerator) / static_cast<float>(lhs.denominator) };
-        float resultRhs { static_cast<float>(rhs.numerator) / static_cast<float>(rhs.denominator) };
+        const float resultLhs { static_cast<float>(lhs.numerator) / static_cast<float>(lhs.denominator) };
+        const float resultRhs { static_cast<float>(rhs.numerator) / static_cast<float>(rhs.denominator) };
 
         const std::partial_ordering compareFloats { resultLhs <=> resultRhs };
         const std::weak_ordering compareFractions { lhs <=> rhs };
@@ -330,20 +320,10 @@ namespace test_fraction {
         const auto numerators0 { GENERATE(0U, 1U, 2U, 3U, 4U, 5U) };
         const auto numerators1 { GENERATE(0U, 1U, 2U, 3U, 4U, 5U) };
 
-        const auto denominators0 { GENERATE(0U, 1U, 2U, 3U, 4U, 5U) };
+        const auto denominators0 { GENERATE(1U, 2U, 3U, 4U, 5U) };
         const auto denominators1 { GENERATE(1U, 2U, 3U, 4U, 5U) };
 
         REQUIRE(CheckCompare({ numerators0, denominators0 }, { numerators1, denominators1 }));
-    }
-
-    TEST_CASE("Fraction Comparison On Negative Values", "[Fraction]")
-    {
-        const Fraction fractionA { 1, 0 };
-        const Fraction fractionB { 5, 1 };
-        const Fraction fractionC { 256, 0 };
-
-        REQUIRE(fractionA > fractionB);
-        REQUIRE(fractionA == fractionC);
     }
 }
 } // namespace tests
