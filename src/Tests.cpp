@@ -302,6 +302,14 @@ namespace test_fraction {
         REQUIRE(fractionA == fractionB);
     }
 
+    TEST_CASE("Basic Fraction Compare Example 3", "[Fraction]")
+    {
+        const Fraction fractionA { 2, 6 };
+        const Fraction fractionB { 1, 4 };
+
+        REQUIRE(fractionA > fractionB);
+    }
+
     bool CheckCompare(const Fraction& lhs, const Fraction& rhs)
     {
         const float resultLhs { static_cast<float>(lhs.numerator) / static_cast<float>(lhs.denominator) };
