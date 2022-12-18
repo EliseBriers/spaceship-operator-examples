@@ -203,6 +203,24 @@ TEST_CASE("Spaceship operator is_gt", "[std::strong_ordering]")
     REQUIRE(std::is_gt(compared));
 }
 
+TEST_CASE("Spaceship operator on int results in strong ordering, traditional compare.", "[std::strong_ordering]")
+{
+    const int numA { 5 };
+    const int numB { 5 };
+    const int numC { 7 };
+
+    const std::strong_ordering compareAB { numA <=> numB };
+    const std::strong_ordering compareAC { numA <=> numC };
+    const std::strong_ordering compareCA { numC <=> numA };
+
+    REQUIRE(compareAB == 0); // ==
+    REQUIRE(compareAC != 0); // !=
+    REQUIRE(compareAC < 0); //  <
+    REQUIRE(compareCA > 0); //  >
+    REQUIRE(compareAC <= 0); // <=
+    REQUIRE(compareCA >= 0); // >=
+}
+
 TEST_CASE("Spaceship operator on int results in strong ordering.", "[std::strong_ordering]")
 {
     const int numA { 5 };
@@ -270,6 +288,16 @@ TEST_CASE("Spaceship operator on float can handle special cases such as NaN.", "
 
     REQUIRE(compareAB == std::partial_ordering::unordered);
     REQUIRE(compareAC == std::partial_ordering::unordered);
+}
+
+TEST_CASE("Float values can be unordered.", "[std::partial_ordering]")
+{
+    const float numA { NAN };
+    const float numB { NAN };
+
+    REQUIRE_FALSE(numA < numB);
+    REQUIRE_FALSE(numA == numB);
+    REQUIRE_FALSE(numA > numB);
 }
 
 TEST_CASE("NaN returns false when compared to itself.", "[std::weak_ordering]")
