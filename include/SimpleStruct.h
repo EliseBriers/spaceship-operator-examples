@@ -33,6 +33,9 @@ struct SimpleStruct {
     int value;
 
     friend std::strong_ordering operator<=>(const SimpleStruct& lhs, const SimpleStruct& rhs) = default;
+
+    // Alternative:
+    // std::strong_ordering operator<=>(const SimpleStruct& other) const = default;
 };
 
 }
