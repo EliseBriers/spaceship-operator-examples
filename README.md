@@ -1,16 +1,25 @@
-<h1 align="center">Spaceship Operator Examples</h1>
-<p align="center">How the <code><=></code> operator can be used to reduce boilerplate code.<br>
-<p align="center">
+<div align="center">
+  <a align="center" href="https://www.youtube.com/watch?v=dUOLH_SjlHA">
+    <img src="https://img.youtube.com/vi/dUOLH_SjlHA/mqdefault.jpg" width=30%>
+  </a>
+  <h1>STD Accumulate Examples</h1>
+  <p>
+    Git repo for the video <a href="https://www.youtube.com/watch?v=dUOLH_SjlHA">Reduce Boilerplate Code With The C++ Spaceship Operator (<=>)</a>.
+    <br>
+    <sub>By <a href="https://www.youtube.com/@ElisePlusPlus">Elise++</a></sub><br><br>
     <a href="/../../actions/workflows/cmake.yml">
-        <img src="/../../actions/workflows/cmake.yml/badge.svg">
+      <img src="/../../actions/workflows/cmake.yml/badge.svg">
     </a>
     <a href="LICENSE">
-        <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+      <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
     </a>
-</p>
+  </p>
+</div>
 
 ***
 
+## Introduction
+This repo contains all the code files shown in the video [Reduce Boilerplate Code With The C++ Spaceship Operator (<=>)](https://www.youtube.com/watch?v=dUOLH_SjlHA). It shows an example of how this new operator can reduce boilerplate code by auto generating most of the other operators.
 
 ## Building and testing
 ### Manually
@@ -18,7 +27,7 @@ Build the project using cmake and a compiler with C++ 20 abilities. Most modern 
 
 ```shell
 git clone https://github.com/EliseBriers/spaceship-operator-examples
-cd std-accumulate-examples
+cd spaceship-operator-examples
 mkdir build
 cd build
 cmake ..
