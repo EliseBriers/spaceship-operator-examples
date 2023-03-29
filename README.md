@@ -2,7 +2,7 @@
   <a align="center" href="https://www.youtube.com/watch?v=dUOLH_SjlHA">
     <img src="https://img.youtube.com/vi/dUOLH_SjlHA/mqdefault.jpg" width=30%>
   </a>
-  <h1>STD Accumulate Examples</h1>
+  <h1>The spaceship operator (<=>)</h1>
   <p>
     Git repo for the video <a href="https://www.youtube.com/watch?v=dUOLH_SjlHA">Reduce Boilerplate Code With The C++ Spaceship Operator (<=>)</a>.
     <br>
